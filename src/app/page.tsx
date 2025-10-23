@@ -615,7 +615,7 @@ function Footer() {
         </div>
         <div className="flex flex-col items-center gap-4 text-center md:items-end">
           <div className="flex flex-col items-center gap-2 text-sm text-muted-foreground md:items-end">
-            <p className="text-xs">Designed by Hamzah Mahomed</p>
+            <p className="text-xs">Designed by Sedge Enterprise</p>
             <div className="flex items-center gap-4">
               <Link
                 href="#"
