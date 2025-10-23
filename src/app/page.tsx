@@ -6,9 +6,6 @@ import { ArrowRight, ShieldCheck, ScanLine, TrendingUp, Building } from "lucide-
 import Image from "next/image";
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
-import * as AccordionPrimitive from "@radix-ui/react-accordion";
-import { ChevronDown } from "lucide-react";
-import * as AvatarPrimitive from "@radix-ui/react-avatar";
 import { cva, type VariantProps } from "class-variance-authority";
 import { Slot } from "@radix-ui/react-slot";
 import * as LabelPrimitive from "@radix-ui/react-label";
@@ -407,16 +404,18 @@ function Hero() {
             </Button>
           </div>
         </div>
-        <div className="relative mt-12 h-80 animate-fade-in-up [animation-delay:800ms]">
-          <div className="absolute inset-x-0 top-0 z-10 h-full bg-gradient-to-t from-background to-transparent" />
-          <Image
-            src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjeWJlcnNlY3VyaXR5JTIwZGFzaGJvYXJkfGVufDB8fHx8MTc2MTEwMzgzMHww&ixlib=rb-4.1.0&q=80&w=1080"
-            alt="Cybersecurity matrix"
-            fill
-            className="rounded-lg object-cover object-top shadow-2xl shadow-primary/20"
-            data-ai-hint="cybersecurity matrix"
-          />
-           <div className="absolute inset-0 rounded-lg ring-1 ring-inset ring-primary/20"></div>
+        <div className="relative mt-16 animate-fade-in-up [animation-delay:800ms] md:mt-24">
+          <div className="absolute inset-x-0 -top-16 z-10 h-32 bg-gradient-to-b from-background to-transparent" />
+          <div className="absolute inset-x-0 -bottom-16 z-10 h-32 bg-gradient-to-t from-background to-transparent" />
+          <div className="relative aspect-[16/7] w-full overflow-hidden rounded-lg shadow-2xl shadow-primary/20 ring-1 ring-inset ring-primary/20">
+            <Image
+              src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjeWJlcnNlY3VyaXR5JTIwZGFzaGJvYXJkfGVufDB8fHx8MTc2MTEwMzgzMHww&ixlib=rb-4.1.0&q=80&w=1080"
+              alt="Cybersecurity matrix"
+              fill
+              className="object-cover object-top"
+              data-ai-hint="cybersecurity matrix"
+            />
+          </div>
         </div>
       </div>
     </section>
@@ -614,22 +613,20 @@ function Footer() {
           </p>
         </div>
         <div className="flex flex-col items-center gap-4 text-center md:items-end">
-          <div className="flex flex-col items-center gap-2 text-sm text-muted-foreground md:items-end">
-            <p className="text-xs">Designed by Sedge Enterprise</p>
-            <div className="flex items-center gap-4">
-              <Link
-                href="#"
-                className="transition-colors hover:text-foreground"
-              >
-                Privacy Policy
-              </Link>
-              <Link
-                href="#"
-                className="transition-colors hover:text-foreground"
-              >
-                Terms of Service
-              </Link>
-            </div>
+          <p className="text-xs text-muted-foreground">Designed by Sedge Enterprise</p>
+          <div className="flex items-center gap-4">
+            <Link
+              href="#"
+              className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+            >
+              Privacy Policy
+            </Link>
+            <Link
+              href="#"
+              className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+            >
+              Terms of Service
+            </Link>
           </div>
         </div>
       </div>
@@ -651,5 +648,3 @@ export default function Home() {
     </div>
   );
 }
-
-    
