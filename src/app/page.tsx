@@ -281,6 +281,7 @@ function SedgeEnterpriseLogo() {
         />
         <path
           d="M109.846 17.5816L108.01 21.6016H103.21L108.586 8.89359H114.13L111.43 15.4216L114.73 21.6016H109.93L107.518 17.0416L109.846 17.5816Z"
+
           fill="currentColor"
         />
         <path
@@ -362,11 +363,8 @@ function Header() {
           </Link>
         </nav>
         <div className="flex items-center gap-4">
-          <Button variant="ghost" asChild>
-            <Link href="#">Sign In</Link>
-          </Button>
           <Button asChild>
-            <Link href="#">Get Started</Link>
+            <Link href="#contact">Get Started</Link>
           </Button>
         </div>
       </div>
@@ -402,12 +400,9 @@ function Hero() {
           </p>
           <div className="mt-8 flex animate-fade-in-up flex-wrap justify-center gap-4 [animation-delay:600ms]">
             <Button asChild size="lg">
-              <Link href="#">
+              <Link href="#contact">
                 Request a Demo <ArrowRight className="ml-2" />
               </Link>
-            </Button>
-            <Button asChild variant="outline" size="lg">
-              <Link href="#contact">Contact Us</Link>
             </Button>
           </div>
         </div>
@@ -516,6 +511,12 @@ function AboutUs() {
                  <p className="text-muted-foreground">To build a secure and efficient digital future for everyone.</p>
             </div>
           </div>
+           <Button asChild className="mt-8 w-fit">
+              <Link href="https://sedgent.co.za/" target="_blank" rel="noopener noreferrer">
+                Visit Sedge Enterprise
+                <ArrowRight />
+              </Link>
+            </Button>
         </div>
         <div className="relative flex items-center justify-center rounded-lg bg-muted/50 p-8">
             <Image
