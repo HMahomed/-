@@ -237,107 +237,10 @@ function Secure360Logo({ className }: { className?: string }) {
   );
 }
 
-function SedgeEnterpriseLogo() {
-  return (
-    <svg
-      width="130"
-      height="38"
-      viewBox="0 0 130 38"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      className="text-muted-foreground"
-    >
-      <g clipPath="url(#clip0_105_2_updated)">
-        <path
-          d="M26.132 0.400391L13.066 11.0184L0 0.400391H13.066H26.132Z"
-          fill="#3E9B4F"
-        />
-        <path
-          d="M26.132 37.5996L13.066 26.9816L0 37.5996H13.066H26.132Z"
-          fill="#3E9B4F"
-        />
-        <path
-          d="M31.2 18.9996C31.2 24.3856 28.164 28.9336 22.86 28.9336C19.188 28.9336 16.908 26.6536 15.636 23.4736L19.428 22.1296C19.836 23.2216 20.928 24.3136 22.86 24.3136C25.056 24.3136 26.4 23.1496 26.4 21.1816V20.7376C25.308 21.8296 23.832 22.4296 22.044 22.4296C17.964 22.4296 14.508 19.3936 14.508 14.9656C14.508 10.5376 17.964 7.50159 22.044 7.50159C23.832 7.50159 25.308 8.10159 26.4 9.19359V8.89359H30.636V18.9976L31.2 18.9996ZM22.536 11.2216C20.004 11.2216 18.564 13.0216 18.564 14.9656C18.564 16.9096 20.004 18.7096 22.536 18.7096C25.068 18.7096 26.544 16.9096 26.544 14.9656C26.544 13.0216 25.068 11.2216 22.536 11.2216Z"
-          fill="currentColor"
-        />
-        <path
-          d="M49.653 14.9652C49.653 19.3932 46.197 22.4292 42.117 22.4292C38.037 22.4292 34.581 19.3932 34.581 14.9652C34.581 10.5372 38.037 7.50122 42.117 7.50122C46.197 7.50122 49.653 10.5372 49.653 14.9652ZM45.561 14.9652C45.561 12.9852 44.085 11.2212 42.117 11.2212C40.149 11.2212 38.673 12.9852 38.673 14.9652C38.673 16.9452 40.149 18.7092 42.117 18.7092C44.085 18.7092 45.561 16.9452 45.561 14.9652Z"
-          fill="currentColor"
-        />
-        <path
-          d="M54.0086 28.5376V8.89359H58.3166V28.5376H54.0086Z"
-          fill="currentColor"
-        />
-        <path
-          d="M74.0743 14.9652C74.0743 19.3932 70.6183 22.4292 66.5383 22.4292C62.4583 22.4292 59.0023 19.3932 59.0023 14.9652C59.0023 10.5372 62.4583 7.50122 66.5383 7.50122C70.6183 7.50122 74.0743 10.5372 74.0743 14.9652ZM69.9823 14.9652C69.9823 12.9852 68.5063 11.2212 66.5383 11.2212C64.5703 11.2212 63.0943 12.9852 63.0943 14.9652C63.0943 16.9452 64.5703 18.7092 66.5383 18.7092C68.5063 18.7092 69.9823 16.9452 69.9823 14.9652Z"
-          fill="currentColor"
-        />
-        <path
-          d="M89.7029 15.6016L85.6229 21.6016H80.8229L86.0549 14.3656L81.2549 8.89359H86.0549L89.5109 13.5976L92.9669 8.89359H97.7669L92.9669 14.3656L98.1989 21.6016H93.3989L89.7029 15.6016Z"
-          fill="currentColor"
-        />
-        <path
-          d="M109.846 17.5816L108.01 21.6016H103.21L108.586 8.89359H114.13L111.43 15.4216L114.73 21.6016H109.93L107.518 17.0416L109.846 17.5816Z"
-
-          fill="currentColor"
-        />
-        <path
-          d="M41.791 0.399902H57.215L53.423 7.5039H45.575L41.791 0.399902Z"
-          fill="currentColor"
-        />
-        <path
-          d="M60.1389 0.399902H64.2309V21.6039H60.1389V0.399902Z"
-          fill="currentColor"
-        />
-        <path
-          d="M84.7709 21.6039V12.1839L81.1829 7.5039H74.8709L67.7229 21.6039H72.2429L73.6589 17.7039H79.8029L80.6669 21.6039H84.7709ZM78.3389 14.7279H75.0629L76.5149 10.9959L78.3389 14.7279Z"
-
-          fill="currentColor"
-        />
-        <path
-          d="M97.9018 21.6039V0.399902H102.018V13.1199L108.302 0.399902H113.882L106.338 12.6399L114.422 21.6039H109.022L104.286 14.7879L102.018 17.3919V21.6039H97.9018Z"
-
-          fill="currentColor"
-        />
-        <path
-          d="M34.773 0.399902H38.865V21.6039H34.773V0.399902Z"
-          fill="currentColor"
-        />
-        <path
-          d="M128.096 11.2239H118.256V7.5039H130V10.7439C130 17.1399 125.024 21.6039 118.328 21.6039C111.632 21.6039 106.808 16.7439 106.808 10.9599C106.808 5.1759 111.632 0.399902 118.328 0.399902C122.96 0.399902 126.752 2.7639 128.588 6.4839H124.28C123.188 4.6839 120.98 3.3879 118.328 3.3879C113.528 3.3879 110.828 7.5039 110.828 10.9599C110.828 14.4159 113.528 18.6159 118.328 18.6159C121.568 18.6159 124.064 16.7199 124.928 14.1399H118.256V11.2239H128.096Z"
-          fill="currentColor"
-        />
-        <path
-          d="M93.3149 21.6039V0.399902H88.8389V8.0199L86.4269 0.399902H82.2269L84.6389 7.9119L82.2269 14.2479L78.1109 0.399902H73.9109L79.8029 21.6039H83.8949L88.2029 9.8799L89.4749 12.8559V21.6039H93.3149Z"
-          fill="currentColor"
-        />
-        <path
-          d="M26.132 0.400391L13.066 11.0184L0 0.400391H13.066H26.132Z"
-          fill="#80B84D"
-        />
-        <path
-          d="M26.132 37.5996L13.066 26.9816L0 37.5996H13.066H26.132Z"
-          fill="#80B84D"
-        />
-      </g>
-      <defs>
-        <clipPath id="clip0_105_2_updated">
-          <rect
-            width="130"
-            height="37.2"
-            fill="white"
-            transform="translate(0 0.400391)"
-          />
-        </clipPath>
-      </defs>
-    </svg>
-  );
-}
-
 function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-14 max-w-7xl items-center justify-between">
+      <div className="container mx-auto flex h-14 items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
           <Secure360Logo />
         </Link>
@@ -375,12 +278,12 @@ function Hero() {
   return (
     <section
       id="hero"
-      className="relative overflow-hidden bg-background py-20 md:py-32"
+      className="relative w-full overflow-hidden bg-background py-20 md:py-32"
     >
       <div className="absolute inset-0 z-0 opacity-10">
         <div className="absolute h-full w-full bg-[radial-gradient(#e2e8f0_1px,transparent_1px)] [background-size:16px_16px]"></div>
       </div>
-      <div className="container max-w-7xl">
+      <div className="container mx-auto">
         <div className="relative z-10 text-center">
           <Badge
             variant="outline"
@@ -446,8 +349,8 @@ const featuresList = [
 
 function Features() {
   return (
-    <section id="features" className="bg-muted/50 py-20 md:py-32">
-      <div className="container max-w-7xl space-y-16">
+    <section id="features" className="w-full bg-muted/50 py-20 md:py-32">
+      <div className="container mx-auto space-y-16">
         <div className="text-center">
           <h2 className="font-headline text-3xl font-bold tracking-tight sm:text-4xl">
             Everything You Need to Stay Secure
@@ -485,8 +388,8 @@ function Features() {
 
 function AboutUs() {
   return (
-    <section id="about-us" className="py-20 md:py-32">
-      <div className="container mx-auto grid max-w-7xl grid-cols-1 gap-12 md:grid-cols-2">
+    <section id="about-us" className="w-full py-20 md:py-32">
+      <div className="container mx-auto grid grid-cols-1 gap-12 md:grid-cols-2">
         <div className="flex flex-col justify-center">
           <Badge
             variant="outline"
@@ -539,8 +442,8 @@ function Contact() {
     (p) => p.id === "contact-illustration"
   );
   return (
-    <section id="contact" className="py-20 md:py-32 bg-muted/50">
-      <div className="container mx-auto grid max-w-7xl grid-cols-1 gap-12 md:grid-cols-2">
+    <section id="contact" className="w-full bg-muted/50 py-20 md:py-32">
+      <div className="container mx-auto grid grid-cols-1 gap-12 md:grid-cols-2">
         <div className="flex flex-col justify-center">
           <h2 className="font-headline text-3xl font-bold tracking-tight sm:text-4xl">
             Ready to Secure Your Business?
@@ -605,8 +508,8 @@ function Contact() {
 
 function Footer() {
   return (
-    <footer className="border-t">
-      <div className="container mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 py-8 md:flex-row">
+    <footer className="w-full border-t">
+      <div className="container mx-auto flex flex-col items-center justify-between gap-6 py-8 md:flex-row">
         <div className="flex flex-col items-center gap-4 md:items-start">
           <Secure360Logo />
           <p className="text-sm text-muted-foreground">
