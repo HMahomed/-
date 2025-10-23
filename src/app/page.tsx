@@ -407,15 +407,15 @@ function Footer() {
           </p>
         </div>
         <div className="flex flex-col items-center gap-4 text-center md:items-end">
-          <div className="flex items-center gap-2">
-            <p className="text-xs text-muted-foreground">Brought to you by</p>
+           <div className="flex items-center gap-2">
             <a
               href="https://sedgent.co.za/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Sedge Enterprise Website"
+              className="text-xs text-muted-foreground hover:text-foreground"
             >
-              <SedgeEnterpriseLogo />
+              Sedge Enterprise
             </a>
           </div>
           <div className="flex flex-col items-center gap-2 text-sm text-muted-foreground md:items-end">
