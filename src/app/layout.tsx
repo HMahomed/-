@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Sedgent Enterprise",
-  description: "Your Vision, Engineered.",
+  title: "Secure360",
+  description: "Comprehensive Security Solutions.",
 };
 
 export default function RootLayout({
