@@ -291,6 +291,7 @@ function SedgeEnterpriseLogo() {
         />
         <path
           d="M84.7709 21.6039V12.1839L81.1829 7.5039H74.8709L67.7229 21.6039H72.2429L73.6589 17.7039H79.8029L80.6669 21.6039H84.7709ZM78.3389 14.7279H75.0629L76.5149 10.9959L78.3389 14.7279Z"
+
           fill="currentColor"
         />
         <path
@@ -404,7 +405,7 @@ function Hero() {
             </Button>
           </div>
         </div>
-        <div className="relative mt-16 animate-fade-in-up [animation-delay:800ms] md:mt-24">
+        <div className="relative mx-auto mt-16 max-w-7xl animate-fade-in-up [animation-delay:800ms] md:mt-24">
           <div className="absolute inset-x-0 -top-16 z-10 h-32 bg-gradient-to-b from-background to-transparent" />
           <div className="absolute inset-x-0 -bottom-16 z-10 h-32 bg-gradient-to-t from-background to-transparent" />
           <div className="relative aspect-[16/7] w-full overflow-hidden rounded-lg shadow-2xl shadow-primary/20 ring-1 ring-inset ring-primary/20">
