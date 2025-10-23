@@ -298,6 +298,7 @@ function SedgeEnterpriseLogo() {
         />
         <path
           d="M97.9018 21.6039V0.399902H102.018V13.1199L108.302 0.399902H113.882L106.338 12.6399L114.422 21.6039H109.022L104.286 14.7879L102.018 17.3919V21.6039H97.9018Z"
+
           fill="currentColor"
         />
         <path
@@ -572,14 +573,14 @@ function Contact() {
               <form className="w-full space-y-6">
                 <div className="space-y-2">
                   <Label htmlFor="name">Name</Label>
-                  <Input id="name" placeholder="John Doe" />
+                  <Input id="name" placeholder="Hamzah Mahomed" />
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="email">Email</Label>
                   <Input
                     id="email"
                     type="email"
-                    placeholder="john.doe@example.com"
+                    placeholder="hamzah.m@sedgent.com"
                   />
                 </div>
                 <div className="space-y-2">
