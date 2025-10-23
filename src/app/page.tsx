@@ -16,6 +16,9 @@ import {
   ScanLine,
   ShieldCheck,
   TrendingUp,
+  Briefcase,
+  BarChart,
+  Code,
 } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -23,13 +26,49 @@ import Image from "next/image";
 import placeholderImageData from "@/lib/placeholder-images.json";
 import { Label } from "@/components/ui/label";
 
+function SedgentLogo() {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="180"
+      height="43"
+      viewBox="0 0 222 53"
+      className="text-foreground"
+    >
+      <g transform="translate(-86 -54)">
+        <text
+          transform="translate(86 89)"
+          fill="currentColor"
+          fontSize="34"
+          fontFamily="Poppins-Bold, Poppins"
+          fontWeight="700"
+        >
+          <tspan x="0" y="0">
+            SEDGENT
+          </tspan>
+        </text>
+        <text
+          transform="translate(87 104)"
+          fill="currentColor"
+          fontSize="14"
+          fontFamily="Poppins-Regular, Poppins"
+          letterSpacing="0.01em"
+        >
+          <tspan x="0" y="0">
+            ENTERPRISE
+          </tspan>
+        </text>
+      </g>
+    </svg>
+  );
+}
+
 function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-14 max-w-7xl items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
-          <ShieldCheck className="h-6 w-6 text-primary" />
-          <span className="font-headline font-bold">Secure 360</span>
+          <SedgentLogo />
         </Link>
         <nav className="hidden items-center gap-6 text-sm md:flex">
           <Link
@@ -47,7 +86,9 @@ function Header() {
         </nav>
         <div className="flex items-center gap-4">
           <Button asChild>
-            <Link href="#contact">Get Started</Link>
+            <Link href="https://sedgent.co.za/" target="_blank">
+              Get Started
+            </Link>
           </Button>
         </div>
       </div>
@@ -65,19 +106,20 @@ function Hero() {
         <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
           <div className="flex flex-col justify-center">
             <h1 className="font-headline text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl">
-              Proactive Security,
+              Your Vision,
               <br />
-              <span className="text-primary">Intelligently Prioritized.</span>
+              <span className="text-primary">Engineered.</span>
             </h1>
             <p className="mt-6 text-lg text-muted-foreground">
-              Secure 360 uses cutting-edge AI to analyze and prioritize
-              security threats, so you can focus on what matters most. Stop
-              drowning in alerts and start taking decisive action.
+              Sedgent Enterprise delivers bespoke software solutions that drive
+              growth and efficiency. From innovative startups to established
+              enterprises, we turn your complex challenges into powerful,
+              scalable technology.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <Button asChild size="lg">
-                <Link href="#contact">
-                  Request a Demo <ArrowRight className="ml-2" />
+                <Link href="https://sedgent.co.za/" target="_blank">
+                  Explore Our Services <ArrowRight className="ml-2" />
                 </Link>
               </Button>
               <Button asChild variant="outline" size="lg">
@@ -90,7 +132,7 @@ function Hero() {
             <Card className="relative h-full w-full transform-gpu transition-transform duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(15deg)_rotateX(5deg)]">
               <CardContent className="relative flex h-full w-full flex-col justify-between p-4 [transform-style:preserve-3d] [transform:translateZ(40px)]">
                 <div className="flex items-start justify-between">
-                  <Badge variant="secondary">Live Dashboard</Badge>
+                  <Badge variant="secondary">Project Dashboard</Badge>
                   <div className="flex items-center gap-1.5">
                     <span className="h-2 w-2 rounded-full bg-red-500"></span>
                     <span className="h-2 w-2 rounded-full bg-yellow-500"></span>
@@ -100,23 +142,23 @@ function Hero() {
                 <div className="space-y-2">
                   <div className="flex items-center justify-between rounded-md bg-card-foreground/5 p-2 transition-all duration-300 group-hover:bg-card-foreground/10">
                     <p className="text-sm font-medium">
-                      Critical Alert: API Gateway
+                      E-commerce Platform Migration
                     </p>
-                    <Badge variant="destructive">High Priority</Badge>
+                    <Badge variant="destructive">In Progress</Badge>
                   </div>
                   <div className="flex items-center justify-between rounded-md bg-card-foreground/5 p-2 transition-all duration-300 delay-100 group-hover:bg-card-foreground/10">
-                    <p className="text-sm">Unauthorized DB Access</p>
-                    <Badge variant="secondary">Medium</Badge>
+                    <p className="text-sm">Mobile App UX/UI Redesign</p>
+                    <Badge variant="secondary">Completed</Badge>
                   </div>
                   <div className="flex items-center justify-between rounded-md bg-card-foreground/5 p-2 transition-all duration-300 delay-200 group-hover:bg-card-foreground/10">
                     <p className="text-sm text-muted-foreground">
-                      Suspicious Login Pattern
+                      API Integration Scoping
                     </p>
-                    <Badge variant="outline">Low</Badge>
+                    <Badge variant="outline">Planning</Badge>
                   </div>
                 </div>
                 <div className="text-xs text-muted-foreground">
-                  AI analysis complete. 3 new prioritized alerts.
+                  3 active projects.
                 </div>
               </CardContent>
             </Card>
@@ -129,22 +171,22 @@ function Hero() {
 
 const featuresList = [
   {
-    icon: <ScanLine className="h-10 w-10 text-primary" />,
-    title: "Comprehensive Data Ingestion",
+    icon: <Briefcase className="h-10 w-10 text-primary" />,
+    title: "Enterprise Solutions",
     description:
-      "Secure 360 seamlessly integrates with all your existing security tools and logs, collecting data in real-time to build a complete picture of your environment.",
+      "We build robust, scalable, and secure applications tailored to your business processes, ensuring seamless operation and future growth.",
   },
   {
-    icon: <TrendingUp className="h-10 w-10 text-primary" />,
-    title: "AI-Powered Threat Analysis",
+    icon: <BarChart className="h-10 w-10 text-primary" />,
+    title: "BI & Analytics",
     description:
-      "Our proprietary AI model analyzes incoming data, identifying patterns and correlating events to distinguish real threats from noise with unparalleled accuracy.",
+      "Unlock the power of your data. We create intelligent dashboards and analytics platforms to provide actionable insights and drive data-driven decisions.",
   },
   {
-    icon: <ShieldCheck className="h-10 w-10 text-primary" />,
-    title: "Actionable, Prioritized Alerts",
+    icon: <Code className="h-10 w-10 text-primary" />,
+    title: "Custom Development",
     description:
-      "Forget alert fatigue. You receive a curated list of high-priority security incidents, complete with context and actionable recommendations for swift remediation.",
+      "From unique mobile apps to complex system integrations, our custom development services bring your most ambitious ideas to life with precision and quality.",
   },
 ];
 
@@ -154,11 +196,10 @@ function Features() {
       <div className="container max-w-7xl space-y-16">
         <div className="text-center">
           <h2 className="font-headline text-3xl font-bold tracking-tight sm:text-4xl">
-            How Our AI Scoring Works
+            Our Core Expertise
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
-            We transform a flood of security data into a clear, prioritized
-            action plan in three simple steps.
+            We transform complex business requirements into elegant, high-performance software solutions.
           </p>
         </div>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
@@ -194,11 +235,10 @@ function Contact() {
       <div className="container mx-auto grid max-w-7xl grid-cols-1 gap-12 md:grid-cols-2">
         <div className="flex flex-col justify-center">
           <h2 className="font-headline text-3xl font-bold tracking-tight sm:text-4xl">
-            Get in Touch
+            Let's Build Together
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            Ready to revolutionize your security operations? Fill out the form
-            to request a personalized demo or ask any questions you might have.
+            Have a project in mind or just want to learn more about our services? We'd love to hear from you.
           </p>
           {contactImage && (
             <div className="relative mt-8 aspect-video w-full overflow-hidden rounded-lg">
@@ -226,7 +266,7 @@ function Contact() {
               <Label htmlFor="message">Message</Label>
               <Textarea
                 id="message"
-                placeholder="How can we help you?"
+                placeholder="Tell us about your project..."
                 className="min-h-[120px]"
               />
             </div>
@@ -236,7 +276,7 @@ function Contact() {
               size="lg"
               onClick={() => alert("This is a demo and doesn't submit.")}
             >
-              Submit
+              Send Message
             </Button>
           </form>
         </div>
@@ -250,9 +290,11 @@ function Footer() {
     <footer className="border-t">
       <div className="container mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 py-8 md:flex-row">
         <div className="flex items-center gap-2">
-          <ShieldCheck className="h-5 w-5 text-primary" />
+          <div className="w-24">
+            <SedgentLogo />
+          </div>
           <p className="text-sm text-muted-foreground">
-            &copy; {new Date().getFullYear()} Secure 360. All rights reserved.
+            &copy; {new Date().getFullYear()} Sedgent Enterprise. All rights reserved.
           </p>
         </div>
         <div className="flex items-center gap-4 text-sm text-muted-foreground">
